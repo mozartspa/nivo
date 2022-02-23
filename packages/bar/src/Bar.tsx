@@ -224,6 +224,7 @@ const InnerBar = <RawDatum extends BarDatum>({
         }),
         config: springConfig,
         immediate: !animate,
+        initial: animate ? undefined : null,
     })
 
     const commonProps = useMemo(
